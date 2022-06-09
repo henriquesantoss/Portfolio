@@ -15,6 +15,10 @@
   --font-action: "Mulish";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
@@ -40,7 +44,7 @@
 }
 
 .show-menu #line1 {
-  transform: rotate(45deg) translate(0.3rem, 0.45rem);
+  transform: rotate(45deg) translate(0.3rem, 0.25rem);
 }
 .show-menu #line2 {
   opacity: 0;
@@ -176,6 +180,7 @@ header {
   top: 0;
   right: -20rem;
   transition: all 1s;
+  z-index: 80;
 }
 
 .show-menu .sidebar {
@@ -326,6 +331,8 @@ header {
   width: 18rem;
   height: 25rem;
   position: relative;
+  margin-top: 50px;
+  margin-bottom: 400px;
 }
 
 .card-img-wrapper {
@@ -509,12 +516,13 @@ header {
 }
 
 .orcamento-wrapper {
-  width: 60%;
-  height: 80%;
+  width: 50%;
+  height: 60%;
   background-color: #ffffff99;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
   position: relative;
+  letter-spacing: 1px;
 }
 
 .sessao-orcamento h1 {
@@ -562,4 +570,52 @@ header {
   padding: 1rem;
   cursor: pointer;
   grid-column: 2;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #17181b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0.2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #f953c6;
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+  background: linear-gradient(to left, #b91d73, #f953c6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 9.6rem #00000099;
 }
