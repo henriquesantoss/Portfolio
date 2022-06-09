@@ -386,7 +386,7 @@ header {
   width: 80%;
   margin-bottom: 2rem;
 }
-
+.card-info a,
 .btn {
   background: #f953c6;
   background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
